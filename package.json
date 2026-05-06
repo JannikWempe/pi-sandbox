@@ -1,0 +1,33 @@
+{
+  "name": "pi-sandbox",
+  "version": "0.1.0",
+  "description": "Standalone pi extension that sandboxes bash with Bubblewrap and enforces path policy for file tools.",
+  "type": "module",
+  "private": true,
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "sandbox",
+    "bubblewrap",
+    "bwrap"
+  ],
+  "license": "MIT",
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "peerDependencies": {
+    "@mariozechner/pi-coding-agent": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit --skipLibCheck --target ES2022 --module NodeNext --moduleResolution NodeNext index.ts"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

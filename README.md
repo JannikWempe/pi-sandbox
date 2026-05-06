@@ -4,10 +4,13 @@ Standalone pi extension that runs bash commands inside a Linux Bubblewrap (`bwra
 
 ## Location
 
-Installed as a global auto-discovered extension:
+Installed as a global auto-discovered extension/package:
 
 ```text
-~/.pi/agent/extensions/pi-sandbox/index.ts
+~/.pi/agent/extensions/pi-sandbox/
+├── package.json
+├── index.ts
+└── README.md
 ```
 
 Reload pi with `/reload` after editing config.
