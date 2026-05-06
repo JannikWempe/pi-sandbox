@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "description": "Standalone pi extension that sandboxes bash with Bubblewrap and enforces path policy for file tools.",
   "type": "module",
-  "private": true,
   "keywords": [
     "pi-package",
     "pi-extension",
